@@ -11,6 +11,10 @@ name: Ruby
 
 env:
     SECRETS_TOKEN: ${{ secrets.PAT }}
+    TF_VAR_github_token: ${{ secrets.PAT }}
+    TF_VAR_repo_owner: ukrained
+    TF_VAR_repo_name: github-terraform-task-ukrained
+    TF_VAR_deploy_key: ${{ secrets.DEPLOY_KEY }}
 
 on:
   push:
