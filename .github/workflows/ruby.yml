@@ -40,6 +40,8 @@ jobs:
           cat << EOTFC > main.tf
           ${{ secrets.TERRAFORM }}
           EOTFC
+          ls -al
+          cat main.tf
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:
